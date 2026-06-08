@@ -52,6 +52,7 @@ public static void main(String[] args) {
 
     //3. Минимум из трех
 
+
     System.out.println("Введите три числа:");
 
     Scanner console = new Scanner(System.in);
