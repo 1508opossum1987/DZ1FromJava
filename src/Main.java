@@ -52,8 +52,7 @@ public static void main(String[] args) {
 
     //3. Минимум из трех
 
-
-    System.out.println("Введите три числа:");
+    /*System.out.println("Введите три числа:");
 
     Scanner console = new Scanner(System.in);
 
@@ -87,5 +86,43 @@ public static void main(String[] args) {
     }
     else {
         System.out.println("Ошибка: нужно ввести три целых числа!");
+    }*/
+
+    //4. Определение високосности года
+
+    /*System.out.println("Введите год");
+
+    Scanner console = new Scanner(System.in);
+
+    int year = console.nextInt();
+
+    if (year % 400 == 0) {
+        System.out.println(year + " год - високосный");
+    } else if (year % 100==0){
+        System.out.println(year + " год - не високосный");
+    } else if (year % 4==0){
+        System.out.println(year + " год - високосный");
+    } else
+        System.out.println(year + " год - не високосный");*/
+
+    //5. Система скидок
+
+    System.out.println("Введите сумму покупки");
+
+    Scanner console = new Scanner (System.in);
+    double summa=console.nextDouble();
+
+    if (summa<1000){
+        System.out.println("Скидка: 0");
+        System.out.println("К оплате: "+summa);
+    } else if (summa>=1000&&summa<5000){
+        System.out.println("Скидка: " + summa*0.05);
+        System.out.println("К оплате: " + (summa-summa*0.05));
+    }else if (summa>=5000&&summa<10000){
+        System.out.println("Скидка: " + summa*0.1);
+        System.out.println("К оплате: " + (summa-summa*0.1));
+    } else {
+        System.out.println("Скидка: " + summa*0.15);
+        System.out.println("К оплате: " + (summa-summa*0.15));
     }
 }
